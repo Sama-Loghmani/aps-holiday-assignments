@@ -39,3 +39,22 @@ body {
     position: absolute;
     top: 45%;
 }
+
+.mario {
+    position: absolute;
+    top: -40px;
+    left: 0px;
+    animation-name: drive;
+    animation-duration: 5s;
+}
+
+/* keyframes */
+
+@keyframes drive {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(900px);
+    }
+}
