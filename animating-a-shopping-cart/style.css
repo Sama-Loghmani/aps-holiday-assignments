@@ -1,0 +1,70 @@
+* {
+    font-family: Calibri, sans-serif;
+    color: #333;
+    font-weight: normal;
+}
+
+header {
+    padding: 10px 20px;
+    border-bottom: 1px solid #eee;
+    background-color: #fff;
+}
+
+header:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+.basket ul {
+    padding: 0;
+    margin: 40px;
+}
+
+.basket li {
+    list-style: none;
+    display: inline-block;
+    width: 30%;
+    margin: 30px 1.5%;
+    text-align: center;
+}
+
+.basket button {
+    border-radius: 10px;
+    cursor: pointer;
+    background: #333;
+    color: #fff;
+    padding: 6px 7px;
+}
+
+.basket header {
+    display: flex;
+    justify-content: space-between;
+}
+.basket header div {
+    position: absolute;
+    right: 20px;
+}
+
+/*  basket animation styles */
+
+.zoom {
+    position: absolute;
+    right: 50%;
+    top: 40px;
+    width: 40px;
+    opacity: 0;
+    animation: zoom 1.6s ease forwards;
+}
+
+@keyframes zoom {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        right: 10px;
+    }
+}
