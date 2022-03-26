@@ -66,5 +66,6 @@ header:after {
     100% {
         opacity: 0;
         right: 10px;
+        color: #142310;
     }
 }
